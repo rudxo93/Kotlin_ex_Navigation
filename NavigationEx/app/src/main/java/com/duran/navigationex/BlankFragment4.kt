@@ -8,7 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.Navigation
 
-class BlankFragment2 : Fragment() {
+class BlankFragment4 : Fragment() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -18,10 +19,10 @@ class BlankFragment2 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_blank2, container, false)
+        val view = inflater.inflate(R.layout.fragment_blank4, container, false)
 
-        view.findViewById<Button>(R.id.btn2).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_blankFragment2_to_blankFragment3)
+        view.findViewById<Button>(R.id.btn4).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_blankFragment4_to_blankFragment5)
         }
 
         return view
